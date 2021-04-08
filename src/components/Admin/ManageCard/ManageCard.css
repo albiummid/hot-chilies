@@ -1,0 +1,46 @@
+.manage-card{
+    width: 900px;
+    height: 30px;
+   display: grid;
+   grid-template-columns: 3fr 3fr 1fr 1fr;
+   border-bottom: 1px dotted teal;
+
+}
+.action-div{
+    display: flex;
+}
+.action-div img{
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+    
+}
+.action-div button{
+    margin-left: 2px;
+}
+
+@media(max-width:720px){
+ 
+    .manage-card{
+        font-size: 10px;
+        width: 350px;
+        height: 50px;
+       display: grid;
+       grid-template-columns: 3fr 3fr 1fr 1fr;
+       border-bottom: 1px dotted teal;
+    
+    }
+    .action-div{
+        display: flex;
+    }
+    .action-div img{
+        width: 20px;
+        height: 18px;
+        cursor: pointer;
+        
+    }
+    .action-div button{
+        margin-left: 2px;
+        margin: 5px;
+    }
+}

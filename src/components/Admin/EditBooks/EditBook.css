@@ -1,0 +1,12 @@
+.update-div{
+    margin-bottom: 10px; 
+}
+.update-div input{
+    outline: none;
+}
+@media(max-width:720px){
+    .update-div input{
+width: 100px;
+
+    }
+}
