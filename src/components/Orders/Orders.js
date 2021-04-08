@@ -84,7 +84,7 @@ const Orders = () => {
         // for tracking countity
         setQuantity(itemCount);
         if (type === "increase") {
-            cartItems.find(item => {
+            cartItems.filter(item => {
                 if (item._id === id) {
                     let updateQuantity = itemCount + 1;
                      // for tracking countity
@@ -98,7 +98,7 @@ const Orders = () => {
         }
         else if (type === "decrease") {
             if (quantity > 1) {
-                cartItems.find(item => {
+                cartItems.filter(item => {
                     if (item._id === id) {
                         let updateQuantity = quantity - 1;
                          // for tracking countity
