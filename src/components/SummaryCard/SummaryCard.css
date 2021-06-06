@@ -5,12 +5,11 @@
   padding: 10px;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: 5px 5px 10px gray;
   margin: 10px auto;
   border-radius: 10px;
-  margin: 20px;
-  max-width: 400px;
+  max-width: 600px;
 }
 .action-button {
   border: none;
@@ -34,4 +33,12 @@
   width: 80px;
   height: 100px;
   margin-right: 20px;
+}
+.order_details {
+  max-width: 250px;
+}
+@media (max-width: 400px) {
+  .summary-card {
+    justify-content: center;
+  }
 }

@@ -8,7 +8,8 @@ const SummaryCard = (props) => {
         <div className="summary-card">
             <div className="book-preview">
                 <img src={image} alt="" />
-                <div style={{ textAlign: "justify" }}> <p>Name: {name}  </p>
+                <div className='order_details' style={{ textAlign: "justify" }}>
+                    <p>Name: {name}  </p>
                     <p>Quantity: {quantity} </p>
                     <p> Order Date : {date}  </p>
                 </div>
