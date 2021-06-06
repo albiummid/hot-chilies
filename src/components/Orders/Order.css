@@ -30,7 +30,7 @@ input {
   border-left: 1px dashed teal;
   padding: 0 40px;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 10px;
 }
 .ordered-container {
   width: 70%;
@@ -54,7 +54,7 @@ input {
     flex-direction: column-reverse;
   }
   .order-container {
-    border-left: 1px dashed teal;
+    border-left: none;
     padding: 50px 0;
     width: 100%;
     border-bottom: 1px dotted teal;
