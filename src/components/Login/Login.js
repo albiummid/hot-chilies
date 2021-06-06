@@ -34,7 +34,6 @@ const Login = () => {
         confirmPassword: ''
     })
     const [newUser, setNewUser] = useState(false);
-    const [errors, setErrors] = useState({});
 
     const handleGoogleSignIn = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
@@ -116,10 +115,9 @@ const Login = () => {
                 });
         }
 
-        if (!newUser && errors === null) {
+        if (!newUser && user.email && user.password) {
             firebase.auth().signInWithEmailAndPassword(user.email, user.password)
                 .then(res => {
-
                     const { email, displayName } = res.user;
                     const newUserInfo = { email, name: displayName }
                     newUserInfo.error = '';

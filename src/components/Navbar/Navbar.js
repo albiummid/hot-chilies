@@ -68,11 +68,11 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="menu-icon" onClick={handleClick}>
+                <div className="menu-icon" >
                     <li className="nav-item">
-                        <Link to="/orders" className="" onClick={closeMobileMenu}><FontAwesomeIcon icon={faShoppingCart} />{cartItems?.length > 0 && <span className="cart-counter">{cartItems?.length}</span>}</Link>
+                        <Link to="/orders" className="" ><FontAwesomeIcon icon={faShoppingCart} />{cartItems?.length > 0 && <span className="cart-counter">{cartItems?.length}</span>}</Link>
                     </li>
-                    <FontAwesomeIcon icon={click ? faTimes : faBars} />
+                    <FontAwesomeIcon onClick={handleClick} icon={click ? faTimes : faBars} />
                 </div>
 
             </nav>

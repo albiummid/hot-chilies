@@ -46,8 +46,6 @@ const Home = () => {
                     <h3 className={navSelected === "breakfast" ? "selected-nav" : ''} onClick={() => setNavSelected("breakfast")}>Breakfast</h3>
                     <h3 className={navSelected === "lunch" ? "selected-nav" : ''} onClick={() => setNavSelected("lunch")}>Lunch</h3>
                     <h3 className={navSelected === "dinner" ? "selected-nav" : ''} onClick={() => setNavSelected("dinner")}>Dinner</h3>
-
-
                 </div>
 
                 <div className="food-cards">

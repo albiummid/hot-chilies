@@ -11,12 +11,12 @@ const FoodDetails = () => {
     const { id } = useParams();
     const [selectedFood, setSelectedFood] = useState({});
     const [quantity, setQuantity] = useState(1);
-    const { _id, name, description, price, image } = selectedFood;
+    const { name, description, price, image } = selectedFood;
     useEffect(() => {
         fetch(`https://hot-chilies.herokuapp.com/food/${id}`)
             .then(res => res.json())
             .then(data => setSelectedFood(data))
-    }, []);
+    }, [id]);
     // Quantity Handler
     const handleQuantity = (type) => {
         if (type === "increase") {
@@ -36,6 +36,9 @@ const FoodDetails = () => {
     // Return
     return (
         <div className="food-details-container">
+            <div className="food-image">
+                <img src={image} alt="" />
+            </div>
             <div className="food-details">
                 <h1>{name}</h1>
                 <p>{description}</p>
@@ -67,7 +70,6 @@ const FoodDetails = () => {
                              </button>
                 }
             </div>
-            <div className="food-image"><img src={image} alt="" /></div>
         </div>
     );
 };

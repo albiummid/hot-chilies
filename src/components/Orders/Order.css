@@ -1,63 +1,74 @@
-.order-page{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around; 
+.order-page {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.empty-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40% auto;
+}
+form,
+.order_info {
+  max-width: 400px;
+  margin: 0 auto;
+}
+input {
+  border: none;
+  width: 100%;
+  padding: 5px;
+}
+.btn-div {
+  display: flex;
+  margin: 10px;
+}
+.order-container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  border-left: 1px dashed teal;
+  padding: 0 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.ordered-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.order-info {
+  margin: 0 auto;
+}
+.btn-confirm {
+  margin: 0 auto;
+}
+.book-card {
+  margin: 20px auto;
+}
 
-}
-.empty-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40% auto;
-}
-.btn-div{
-    display: flex;
-    margin: 10px;
-}
-.order-container{
+@media (max-width: 720px) {
+  .order-page {
+    margin-top: 10px;
+    flex-direction: column-reverse;
+  }
+  .order-container {
     border-left: 1px dashed teal;
-    padding: 0 40px;
-    width: 700px;
-}
-.ordered-container{
-    width: 70%;
-
-}
-.order-info{
+    padding: 50px 0;
+    width: 100%;
+    border-bottom: 1px dotted teal;
+  }
+  .ordered-container {
+    width: 100%;
+  }
+  .input {
+    width: 10%;
+  }
+  .btn-confirm {
     margin: 0 auto;
-}
-.btn-confirm{
-    margin: 0 auto;
-}
-.book-card{
+  }
+  .book-card {
     margin: 20px auto;
-}
-
-@media(max-width:720px){
-    .order-page{
-        margin-top: 10px;
-        flex-direction: column-reverse;
-       
-    
-    }
-    .order-container{
-        border-left: 1px dashed teal;
-        padding: 50px 0;
-        width: 100%;
-        border-bottom: 1px dotted teal;
-    }
-    .ordered-container{
-        width: 100%;
-      
-    
-    }
-    .input{
-        width: 10%;
-    }
-    .btn-confirm{
-        margin: 0 auto;
-    }
-    .book-card{
-        margin: 20px auto;
-    }
+  }
 }

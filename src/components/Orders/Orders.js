@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Order.css'
 import { useForm } from "react-hook-form";
-import { UserContext } from '../../App';
 import CartCard from "../CartCard/CartCard";
 import SummaryCard from '../SummaryCard/SummaryCard';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 const Orders = () => {
-    const dispatch = useDispatch();
     const [inputData, setInputData] = useState({
         name: '',
         phone: '',
@@ -72,8 +70,8 @@ const Orders = () => {
                 setUpdateState(!updateState)
             })
     }
-    let totalPrice = cartItems && cartItems.reduce((total, food) => total + Number(food.price), 0);
-    const total = totalPrice.toFixed(2);
+    // let totalPrice = cartItems && cartItems.reduce((total, food) => total + Number(food.price), 0);
+    // const total = totalPrice.toFixed(2);
 
 
     // Quantity Handler
@@ -151,7 +149,7 @@ const Orders = () => {
                     <h1 style={{ textAlign: "center" }}>Cart Items : {cartItems.length}</h1>
 
 
-                    <div>
+                    <div className='order_info'>
                         <p> From: Pallibidut , Savar Cantonment .</p>
                         <p>Arrival Time : 1 hours remaining</p>
                         <p> To : {inputData.address}</p>
