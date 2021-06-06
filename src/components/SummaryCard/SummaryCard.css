@@ -1,0 +1,52 @@
+.summary-card{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+    margin: 10px auto;
+    border-radius: 10px;
+    margin: 20px auto;
+   width: 600px;
+  
+}
+.action-button{
+border: none;
+cursor: pointer;
+opacity: 0.7;
+outline: none;
+}
+.action-button:hover{
+    opacity: 1;
+}
+
+.book-preview{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.book-preview img{
+    width: 80px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+@media(max-width:720px){
+    .summary-card{
+       width: 350px; 
+    }
+  
+    .book-preview{
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        text-align: start;
+    }
+    .book-preview img{
+        width: 30px;
+        height: 100px;
+        margin-right: 20px;
+    }
+}

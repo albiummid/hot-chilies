@@ -1,0 +1,63 @@
+.order-page{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; 
+
+}
+.empty-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40% auto;
+}
+.btn-div{
+    display: flex;
+    margin: 10px;
+}
+.order-container{
+    border-left: 1px dashed teal;
+    padding: 0 40px;
+    width: 700px;
+}
+.ordered-container{
+    width: 70%;
+
+}
+.order-info{
+    margin: 0 auto;
+}
+.btn-confirm{
+    margin: 0 auto;
+}
+.book-card{
+    margin: 20px auto;
+}
+
+@media(max-width:720px){
+    .order-page{
+        margin-top: 10px;
+        flex-direction: column-reverse;
+       
+    
+    }
+    .order-container{
+        border-left: 1px dashed teal;
+        padding: 50px 0;
+        width: 100%;
+        border-bottom: 1px dotted teal;
+    }
+    .ordered-container{
+        width: 100%;
+      
+    
+    }
+    .input{
+        width: 10%;
+    }
+    .btn-confirm{
+        margin: 0 auto;
+    }
+    .book-card{
+        margin: 20px auto;
+    }
+}
