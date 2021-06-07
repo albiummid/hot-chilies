@@ -1,14 +1,15 @@
 .cart-card-container {
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 10px auto;
-  padding: 20px;
+  padding: 10px;
   gap: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px gray;
+  user-select: none;
 }
 .delete-btn img {
   width: 20px;
@@ -24,18 +25,24 @@
 .delete-btn:hover {
   opacity: 1;
 }
-.card-catagory-action {
+.card-category-action {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+}
+.card-catagory-info {
+  display: grid;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
 }
 .card-catagory-image img {
-  width: 90px;
+  width: 120px;
   padding: 3px;
 }
 .card-catagory-image {
   display: flex;
   justify-content: center;
+}
+.icon {
+  cursor: pointer;
 }

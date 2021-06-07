@@ -20,7 +20,7 @@ const Orders = () => {
     });
     const { register, handleSubmit } = useForm();
     const [userOrders, setUserOrders] = useState([]);
-    const [updateState, setUpdateState] = useState(false)
+    const [updateState, setUpdateState] = useState(false);
     useEffect(() => {
         const url = `https://hot-chilies.herokuapp.com/userOrders?email=${loggedInUser.email}`;
         fetch(url)
@@ -135,7 +135,7 @@ const Orders = () => {
                     <div className="empty-div">
                         <p>You didn't any order !</p>
                     </div>
-                    : <div>
+                    : <div className='oredered_card_container'>
                         {
                             userOrders.map((order, index) => <SummaryCard key={index} handleOrderDelete={handleOrderDelete} order={order} />)
                         }

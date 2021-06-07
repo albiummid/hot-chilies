@@ -5,9 +5,9 @@
   padding: 10px;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: 5px 5px 10px gray;
-  margin: 10px auto;
+  margin: 10px;
   border-radius: 10px;
   max-width: 600px;
 }
@@ -21,7 +21,7 @@
   opacity: 1;
 }
 
-.book-preview {
+.food-preview {
   margin-left: 10px;
   display: flex;
   justify-content: center;
@@ -29,13 +29,14 @@
   align-items: center;
   text-align: start;
 }
-.book-preview img {
-  width: 80px;
-  height: 100px;
+.food-preview img {
+  width: 110px;
   margin-right: 20px;
 }
 .order_details {
   max-width: 250px;
+  display: flex;
+  gap: 20px;
 }
 @media (max-width: 400px) {
   .summary-card {

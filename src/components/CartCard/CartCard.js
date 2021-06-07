@@ -17,15 +17,26 @@ const CartCard = ({ handleQuantity, food }) => {
                 <p>{name}</p>
                 <p style={{ color: "red" }}>$ {price}</p>
                 <p>delevery fee</p>
+                <div className="card-category-action">
+                    <div className="quantity-div">
+                        <FontAwesomeIcon
+                            className='icon'
+                            onClick={() => handleQuantity("increase", _id, quantity)}
+                            icon={faPlus} />
+
+                        <h3>{quantity}</h3>
+
+                        <FontAwesomeIcon
+                            className='icon'
+                            onClick={() => handleQuantity("decrease", _id, quantity)}
+                            icon={faMinus} />
+                    </div>
+                    <button className="delete-btn"
+                        onClick={() => dispatch(removeFromCart(food))}>
+                        <img src={deleteIcon} alt="" />
+                    </button>
+                </div>
             </div>
-
-            <div className="card-catagory-action">
-
-                <div className="quantity-div">
-                    <button onClick={() => handleQuantity("increase", _id, quantity)} ><FontAwesomeIcon icon={faPlus} /></button><h3>{quantity}</h3><button onClick={() => handleQuantity("decrease", _id, quantity)}><FontAwesomeIcon icon={faMinus} /></button> </div>
-                <button className="delete-btn" onClick={() => dispatch(removeFromCart(food))}><img src={deleteIcon} alt="" /> </button>
-            </div>
-
         </div>
     );
 };

@@ -24,9 +24,6 @@ input {
   margin: 10px;
 }
 .order-container {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   border-left: 1px dashed teal;
   padding: 0 40px;
   max-width: 700px;
@@ -37,6 +34,11 @@ input {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.oredered_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .order-info {
   margin: 0 auto;
@@ -56,7 +58,6 @@ input {
   .order-container {
     border-left: none;
     padding: 50px 0;
-    width: 100%;
     border-bottom: 1px dotted teal;
   }
   .ordered-container {

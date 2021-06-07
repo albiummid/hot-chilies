@@ -53,7 +53,7 @@ const Navbar = () => {
                     }
 
                     {
-                        loggedInUser?.email ? <li className="nav-item" onClick={signOut}> <Link className="nav-links-mobile" onClick={closeMobileMenu}>Log Out</Link>  </li> : <li className="nav-item"> <Link to="/login" className="nav-links-mobile" onClick={closeMobileMenu}>Log In</Link>  </li>
+                        loggedInUser?.email ? <li className="nav-item" onClick={signOut}> <Link to='' className="nav-links-mobile" onClick={closeMobileMenu}>Log Out</Link>  </li> : <li className="nav-item"> <Link to="/login" className="nav-links-mobile" onClick={closeMobileMenu}>Log In</Link>  </li>
                     }
                     <li className="nav-item">
                         {

@@ -18,17 +18,16 @@
   padding-bottom: 50px;
 }
 .input-group {
-  display: block;
   width: 100%;
+  display: flex;
   margin-bottom: 15px;
 }
-.input-group input {
+.input-group > input {
   border: none;
   width: 90%;
   height: 30px;
-  padding: 6px 20px;
+  padding: 6px;
   font-size: large;
-  /* box-sizing: border-box; */
   border-bottom: 1px solid teal;
   background-color: white;
 }
